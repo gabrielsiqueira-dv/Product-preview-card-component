@@ -1,0 +1,111 @@
+
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    
+   width: 600px;
+   height: 400px;
+   
+}
+.container img{
+   height: 100%;
+  border-top-left-radius:5% ;
+  border-bottom-left-radius:5% ;
+   
+}
+.container .text{
+    
+    padding: 0 20px;
+    background-color: white;
+    border-top-right-radius:5% ;
+  border-bottom-right-radius:5% ;
+    
+}
+.container .text .text-object{
+    font-size: 12px;
+    opacity: 0.5;
+    letter-spacing:4px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+}
+
+.container .text .paragrafo{
+    opacity: 0.8;
+    padding: 10px 0;
+}
+.container .text  ul {
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    
+}
+.container .text ul li {
+    padding-right: 5px;
+    margin-top: 20px;
+}
+.container .text  .price-promo{
+    color: var(--Dark-cyan);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+.container .text .price{
+    opacity: 0.5;
+    padding-top: 7px;
+    padding-left: 20px;
+    font-size: 13px;
+    margin-left:30px ;
+    text-decoration:line-through;
+  
+}
+.container .text .button{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: var(--Dark-cyan);
+    background-color: var(--Dark-cyan);
+  margin-top: 30px;
+  color: white;
+
+}
+.container .text .button img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.container .text .button:hover{
+    cursor: pointer;
+    background-color: #006400;
+    border: var(#006400);
+}
+@media (max-width:425px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+      
+    }
+    .container .text{
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+    .container img{
+       width: 100%;
+       border-top-right-radius: 5%;
+       border-top-left-radius: 5%;
+    }
+    .container .text .button{
+        margin-bottom: 10px;
+    }
+
+}
